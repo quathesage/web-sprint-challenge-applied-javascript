@@ -1,4 +1,21 @@
 const Card = (article) => {
+  const cContain = document.createEilement('div')
+  cContain.classList.add('card');
+
+  const headline = document.createElement('div');
+  headline.classList.add('headline');
+
+  const author = document.createElement('div');
+  author.classList.add('author');
+
+  const imgContain = document.createElement('div');
+  imgContain.classList.add('img-container');
+  const image = document.createElement('img');
+  image.src = ;
+
+
+  const name = document.createElement('span');
+  name.textContent = `By {}`
   // TASK 5
   // ---------------------
   // Implement this function, which should return the markup you see below.
