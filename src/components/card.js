@@ -1,6 +1,23 @@
 import axios from "axios";
 // import { response } from "express";
-
+// TASK 5
+  // ---------------------
+  // Implement this function, which should return the markup you see below.
+  // It takes as its only argument an "article" object with `headline`, `authorPhoto` and `authorName` properties.
+  // The tags used, the hierarchy of elements and their attributes must match the provided markup exactly!
+  // The text inside elements will be set using their `textContent` property (NOT `innerText`).
+  // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
+  //
+  // <div class="card">
+  //   <div class="headline">{ headline }</div>
+  //   <div class="author">
+  //     <div class="img-container">
+  //       <img src={ authorPhoto }>
+  //     </div>
+  //     <span>By { authorName }</span>
+  //   </div>
+  // </div>
+  //
 const Card = (article) => {
   const cContain = document.createElement('div')
   cContain.classList.add('card');
@@ -28,7 +45,7 @@ const Card = (article) => {
   cContain.appendChild(author);
   cContain.appendChild(name);
   author.appendChild(imgContain);
-  author.appendChild(image);
+  imgContain.appendChild(image);
 
 
   cContain.addEventListener('click', () => {
@@ -59,24 +76,7 @@ const cardAppender = (selector) => {
 
 } 
 
-// TASK 5
-  // ---------------------
-  // Implement this function, which should return the markup you see below.
-  // It takes as its only argument an "article" object with `headline`, `authorPhoto` and `authorName` properties.
-  // The tags used, the hierarchy of elements and their attributes must match the provided markup exactly!
-  // The text inside elements will be set using their `textContent` property (NOT `innerText`).
-  // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
-  //
-  // <div class="card">
-  //   <div class="headline">{ headline }</div>
-  //   <div class="author">
-  //     <div class="img-container">
-  //       <img src={ authorPhoto }>
-  //     </div>
-  //     <span>By { authorName }</span>
-  //   </div>
-  // </div>
-  //
+
 
   // TASK 6
   // ---------------------
