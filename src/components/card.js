@@ -4,6 +4,7 @@ const Card = (article) => {
 
   const headline = document.createElement('div');
   headline.classList.add('headline');
+  headline.textContent = article.headline
 
   const author = document.createElement('div');
   author.classList.add('author');
@@ -11,12 +12,16 @@ const Card = (article) => {
   const imgContain = document.createElement('div');
   imgContain.classList.add('img-container');
   const image = document.createElement('img');
-  image.src = ;
+  image.src = article.authorPhoto ;
 
 
   const name = document.createElement('span');
-  name.textContent = `By {}`
-  // TASK 5
+  name.textContent = `By ${article.name}`;
+
+  return cContain;
+  
+}
+// TASK 5
   // ---------------------
   // Implement this function, which should return the markup you see below.
   // It takes as its only argument an "article" object with `headline`, `authorPhoto` and `authorName` properties.
@@ -34,8 +39,6 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
-}
-
 const cardAppender = (selector) => {
   // TASK 6
   // ---------------------
