@@ -23,9 +23,9 @@ const Header = (title, date, temp) => {
 
 const headerAppender = (selector) => {
   const container = document.querySelector(selector)
-  const elem = Header('Lambda Times', 'October 29th', 56);
   container.appendChild(elem);
- } 
+} 
+const elem = Header('Lambda Times', 'October 29th, 2021', '55°');
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
